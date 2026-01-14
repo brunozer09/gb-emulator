@@ -14,11 +14,16 @@ typedef struct {
   uint8_t rom_size;
   uint8_t ram_size;
   uint8_t destination_code;
-  uint8_t
+  uint8_t old_licensee_code;
+  uint8_t mask_rom_version_num;
+  uint8_t header_checksum;
+  uint16_t global_checksum; 
 } Header;
 
 typedef struct{
   Header header;
 } Cartridge;
+
+Header getHeader(uint8_t *bytes);
 
 #endif  
