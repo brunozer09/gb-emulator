@@ -27,8 +27,8 @@ int main(int argc, char **argv){
     return 1;
   }
 
-  Header rom_header = getHeader(rom);
-  printInfo(&rom_header);
+  Cartridge cartridge = getRomInfo(rom);
+  printInfo(&cartridge);
 
   fclose(fl);
   return 0;

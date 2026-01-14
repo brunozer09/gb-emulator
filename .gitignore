@@ -12,3 +12,6 @@
 #Test roms
 *.gb
 *.gbc
+
+#Notes
+*.txt
