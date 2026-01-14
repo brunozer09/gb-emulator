@@ -1,0 +1,14 @@
+#Build files
+/build 
+
+#Object files
+*.o 
+
+#Executables
+*.exe 
+*.out 
+*.app
+
+#Test roms
+*.gb
+*.gbc
