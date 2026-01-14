@@ -1,4 +1,6 @@
 #include "cartridge.h"
+#include <stdio.h>
+#include <string.h>
 
 Header getHeader(const uint8_t *rom){ 
   Header header;
@@ -22,3 +24,8 @@ Header getHeader(const uint8_t *rom){
 
   return header;
 } 
+
+void printInfo(Header *header){
+  printf("TITLE: %s\n", header->title);
+  printf("ROM SIZE: %d\n", header->rom_size);
+}
